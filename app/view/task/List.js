@@ -3,6 +3,7 @@ Ext.define('DemoApp.view.task.List', {
     xtype   : 'tasklist',
     
     config: {
+        cls     : 'tasklist',
         store   : 'Tasks',
         itemTpl : '{description}',
         title   : 'Tasks'
