@@ -26,7 +26,21 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
+    models: [
+        'Task'
+    ],
+    
+    stores: [
+        'Tasks'
+    ],
+    
     views: [
+        'Main',
+        'Menu',
+        'task.List'
+    ],
+    
+    controllers: [
         'Main'
     ],
 
@@ -53,7 +67,9 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('DemoApp.view.Main'));
+        Ext.Viewport.add({
+            xtype: 'mainview'
+        });
     },
 
     onUpdated: function() {
