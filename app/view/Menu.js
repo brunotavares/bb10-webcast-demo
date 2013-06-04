@@ -5,12 +5,15 @@ Ext.define('DemoApp.view.Menu',{
         hideOnMaskTap: true,
         items: [{
             ui: 'confirm',
-            text: 'New Task'
+            text: 'New Task',
+            iconCls: 'ico-compose'
         },{
             ui: 'decline',
-            text: 'Delete Selected'
+            text: 'Delete Selected',
+            iconCls: 'ico-trash'
         },{
-            text: 'Send List via Email'
+            text: 'Send List via Email',
+            iconCls: 'ico-email'
         }]
     },
     
