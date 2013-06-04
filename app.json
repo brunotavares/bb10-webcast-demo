@@ -69,7 +69,15 @@
     "css": [
         {
             "path": "resources/css/app.css",
-            "update": "delta"
+            "update": "delta",
+            "theme": "Default",
+            "platform": ["android", "ios", "ie10", "chrome", "safari", "firefox"]
+        },
+        {
+            "path": "resources/css/app-blackberry.css",
+            "update": "delta",
+            "theme": "Blackberry",
+            "platform": ["blackberry"]
         }
     ],
 

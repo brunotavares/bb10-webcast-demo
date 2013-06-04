@@ -12,5 +12,12 @@ Ext.define('DemoApp.view.Menu',{
         },{
             text: 'Send List via Email'
         }]
-    }
+    },
+    
+    platformConfig: [{
+        theme: ['Blackberry'],
+        enter: 'left',
+        exit: 'left',
+        left: 0
+    }]
 });
